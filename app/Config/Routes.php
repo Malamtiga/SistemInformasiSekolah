@@ -38,6 +38,61 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->group('mapel', function(RouteCollection $routes){
+    $routes->get('/', 'MapelController::index');
+    $routes->post('/', 'MapelController::store');
+    $routes->patch('/', 'MapelController::update');
+    $routes->delete('/', 'MapelController::delete');
+    $routes->get('(:num)', 'MapelController::show/$1');
+    $routes->get('all', 'MapelController::all');
+});
+
+$routes->group('kehadiranguru', function(RouteCollection $routes){
+    $routes->get('/', 'KehadiranGuruController::index');
+    $routes->post('/', 'KehadiranGuruController::store');
+    $routes->patch('/', 'KehadiranGuruController::update');
+    $routes->delete('/', 'KehadiranGuruController::delete');
+    $routes->get('(:num)', 'KehadiranGuruController::show/$1');
+    $routes->get('all', 'KehadiranGuruController::all');
+});
+
+$routes->group('jadwal', function(RouteCollection $routes){
+    $routes->get('/', 'JadwalController::index');
+    $routes->post('/', 'JadwalController::store');
+    $routes->patch('/', 'JadwalController::update');
+    $routes->delete('/', 'JadwalController::delete');
+    $routes->get('(:num)', 'JadwalController::show/$1');
+    $routes->get('all', 'JadwalController::all');
+});
+
+
+$routes->group('tahunajaran', function(RouteCollection $routes){
+    $routes->get('/', 'TahunAjaranController::index');
+    $routes->post('/', 'TahunAjaranController::store');
+    $routes->patch('/', 'TahunAjaranController::update');
+    $routes->delete('/', 'TahunAjaranController::delete');
+    $routes->get('(:num)', 'TahunAjaranController::show/$1');
+    $routes->get('all', 'TahunAjaranController::all');
+
+});
+
+$routes->group('pendidikanguru', function(RouteCollection $routes){
+    $routes->get('/', 'PendidikanGuruController::index');
+    $routes->post('/', 'PendidikanGuruController::store');
+    $routes->patch('/', 'PendidikanGuruController::update');
+    $routes->delete('/', 'PendidikanGuruController::delete');
+    $routes->get('(:num)', 'PendidikanGuruController::show/$1');
+    $routes->get('all', 'PendidikanGuruController::all');
+});
+
+$routes->group('kelas', function(RouteCollection $routes){
+    $routes->get('/', 'KelasController::index');
+    $routes->post('/', 'KelasController::store');
+    $routes->patch('/', 'KelasController::update');
+    $routes->delete('/', 'KelasController::delete');
+    $routes->get('(:num)', 'KelasController::show/$1');
+    $routes->get('all', 'KelasController::all');
+});
 
 $routes->group('siswa', function(RouteCollection $routes){
     $routes->get('/', 'SiswaController::index');
