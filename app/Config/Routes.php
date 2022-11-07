@@ -38,6 +38,38 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+
+//table eva
+
+$routes->group('kelassiswa', function(RouteCollection $routes){
+    $routes->get('/', 'KelasSiswaController::index');
+    $routes->post('/', 'KelasSiswaController::store');
+    $routes->patch('/', 'KelasSiswaController::update');
+    $routes->delete('/', 'KelasSiswaController::delete');
+    $routes->get('(:num)', 'KelasSiswaController::show/$1');
+    $routes->get('all', 'KelasSiswaController::all');
+});
+
+$routes->group('penilaian', function(RouteCollection $routes){
+    $routes->get('/', 'PenilaianController::index');
+    $routes->post('/', 'PenilaianController::store');
+    $routes->patch('/', 'PenilaianController::update');
+    $routes->delete('/', 'PenilaianController::delete');
+    $routes->get('(:num)', 'PenilaianController::show/$1');
+    $routes->get('all', 'PenilaianController::all');
+});
+
+$routes->group('rincianpenilaian', function(RouteCollection $routes){
+    $routes->get('/', 'RincianPenilaianController::index');
+    $routes->post('/', 'RincianPenilaianController::store');
+    $routes->patch('/', 'RincianPenilaianController::update');
+    $routes->delete('/', 'RincianPenilaianController::delete');
+    $routes->get('(:num)', 'RincianPenilaianController::show/$1');
+    $routes->get('all', 'RincianPenilaianController::all');
+});
+//
+
+
 $routes->group('mapel', function(RouteCollection $routes){
     $routes->get('/', 'MapelController::index');
     $routes->post('/', 'MapelController::store');
