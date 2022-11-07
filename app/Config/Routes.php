@@ -2,6 +2,7 @@
 
 namespace Config;
 
+use CodeIgniter\Router\RouteCollection;
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -36,6 +37,35 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+
+
+$routes->group('tahunajaran', function(RouteCollection $routes){
+    $routes->get('/', 'TahunAjaranController::index');
+    $routes->post('/', 'TahunAjaranController::store');
+    $routes->patch('/', 'TahunAjaranController::update');
+    $routes->delete('/', 'TahunAjaranController::delete');
+    $routes->get('(:num)', 'TahunAjaranController::show/$1');
+    $routes->get('all', 'TahunAjaranController::all');
+
+});
+
+$routes->group('pendidikanguru', function(RouteCollection $routes){
+    $routes->get('/', 'PendidikanGuruController::index');
+    $routes->post('/', 'PendidikanGuruController::store');
+    $routes->patch('/', 'PendidikanGuruController::update');
+    $routes->delete('/', 'PendidikanGuruController::delete');
+    $routes->get('(:num)', 'PendidikanGuruController::show/$1');
+    $routes->get('all', 'PendidikanGuruController::all');
+});
+
+$routes->group('kelas', function(RouteCollection $routes){
+    $routes->get('/', 'KelasController::index');
+    $routes->post('/', 'KelasController::store');
+    $routes->patch('/', 'KelasController::update');
+    $routes->delete('/', 'KelasController::delete');
+    $routes->get('(:num)', 'KelasController::show/$1');
+    $routes->get('all', 'KelasController::all');
+});
 
 /*
  * --------------------------------------------------------------------
