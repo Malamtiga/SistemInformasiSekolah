@@ -3,6 +3,7 @@
 namespace Config;
 
 use CodeIgniter\Router\RouteCollection;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -91,6 +92,24 @@ $routes->group('kelas', function(RouteCollection $routes){
     $routes->delete('/', 'KelasController::delete');
     $routes->get('(:num)', 'KelasController::show/$1');
     $routes->get('all', 'KelasController::all');
+});
+
+$routes->group('siswa', function(RouteCollection $routes){
+    $routes->get('/', 'SiswaController::index');
+    $routes->post('/', 'SiswaController::store');
+    $routes->patch('/', 'SiswaController::update');
+    $routes->delete('/', 'SiswaController::delete');
+    $routes->get('(:num)', 'SiswaController::show/$1');
+    $routes->get('all', 'SiswaController::all');
+});
+
+$routes->group('kelassiswa', function(RouteCollection $routes){
+    $routes->get('/', 'KelasSiswaController::index');
+    $routes->post('/', 'KelasSiswaController::store');
+    $routes->patch('/', 'KelasSiswaController::update');
+    $routes->delete('/', 'KelasSiswaController::delete');
+    $routes->get('(:num)', 'KelasSiswaController::show/$1');
+    $routes->get('all', 'KelasSiswaController::all');
 });
 
 /*
