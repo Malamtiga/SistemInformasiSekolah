@@ -36,6 +36,32 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->group('mapel', function(RouteCollection $routes){
+    $routes->get('/', 'MapelController::index');
+    $routes->post('/', 'MapelController::store');
+    $routes->patch('/', 'MapelController::update');
+    $routes->delete('/', 'MapelController::delete');
+    $routes->get('(:num)', 'MapelController::show/$1');
+    $routes->get('all', 'MapelController::all');
+});
+
+$routes->group('kehadiranguru', function(RouteCollection $routes){
+    $routes->get('/', 'KehadiranGuruController::index');
+    $routes->post('/', 'KehadiranGuruController::store');
+    $routes->patch('/', 'KehadiranGuruController::update');
+    $routes->delete('/', 'KehadiranGuruController::delete');
+    $routes->get('(:num)', 'KehadiranGuruController::show/$1');
+    $routes->get('all', 'KehadiranGuruController::all');
+});
+
+$routes->group('jadwal', function(RouteCollection $routes){
+    $routes->get('/', 'JadwalController::index');
+    $routes->post('/', 'JadwalController::store');
+    $routes->patch('/', 'JadwalController::update');
+    $routes->delete('/', 'JadwalController::delete');
+    $routes->get('(:num)', 'JadwalController::show/$1');
+    $routes->get('all', 'JadwalController::all');
+});
 
 /*
  * --------------------------------------------------------------------
