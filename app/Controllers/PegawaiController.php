@@ -103,13 +103,24 @@ class PegawaiController extends BaseController
     }
     public function store(){
         $pegm = new PegawaiModel();
+        $sandi = $this->request->getVar('sandi');
 
         $id =  $pegm -> insert([
-            'nip'       => $this->request->getVar('nip'),
+            'nip'           => $this->request->getVar('nip'),
             'nama_depan'    => $this->request->getVar('nama_depan'),
-            'gelar_depan'         => $this->request->getVar('gelar_depan'),
-            'email'  => $this->request->getVar('email'),
+            'nama_belakang' => $this->request->getVar('nama_belakang'),
+            'gelar_depan'   => $this->request->getVar('gelar_depan'),
+            'gelar_belakang'=> $this->request->getVar('gelar_belakang'),
+            'gender'        => $this->request->getVar('gender'),
+            'no_telp'       => $this->request->getVar('no_telp'),
+            'no_wa'         => $this->request->getVar('no_wa'),
+            'email'         => $this->request->getVar('email'),
             'bagian_id'     => $this->request->getVar('bagian_id'),
+            'alamat'        => $this->request->getVar('alamat'),
+            'kota'          => $this->request->getVar('kota'),
+            'tgl_lahir'     => $this->request->getVar('tgl_lahir'),
+            'tempat_lahir'  => $this->request->getVar('tempat_lahir'),
+            'sandi'         => password_hash($sandi, PASSWORD_BCRYPT),
         ]);
         return $this->response->setJSON(['id' => $id])
         ->setStatusCode(intval($id)> 0 ? 200 : 406);  
@@ -117,16 +128,27 @@ class PegawaiController extends BaseController
     public function update(){
         $pegm = new PegawaiModel();
         $id = (int)$this->request->getVar('id');
+        $sandi = $this->request->getVar('sandi');
         
         if($pegm->find($id) == null)
         throw PageNotFoundException::forPageNotFound();
         
         $hasil = $pegm->update($id,[
-            'nip'       => $this->request->getVar('nip'),
+            'nip'           => $this->request->getVar('nip'),
             'nama_depan'    => $this->request->getVar('nama_depan'),
-            'gelar_depan'         => $this->request->getVar('gelar_depan'),
-            'email'  => $this->request->getVar('email'),
+            'nama_belakang' => $this->request->getVar('nama_belakang'),
+            'gelar_depan'   => $this->request->getVar('gelar_depan'),
+            'gelar_belakang'=> $this->request->getVar('gelar_belakang'),
+            'gender'        => $this->request->getVar('gender'),
+            'no_telp'       => $this->request->getVar('no_telp'),
+            'no_wa'         => $this->request->getVar('no_wa'),
+            'email'         => $this->request->getVar('email'),
             'bagian_id'     => $this->request->getVar('bagian_id'),
+            'alamat'        => $this->request->getVar('alamat'),
+            'kota'          => $this->request->getVar('kota'),
+            'tgl_lahir'     => $this->request->getVar('tgl_lahir'),
+            'tempat_lahir'  => $this->request->getVar('tempat_lahir'),
+            'sandi'         => password_hash($sandi, PASSWORD_BCRYPT),
         ]);
         return $this->response->setJSON(['result'=>$hasil]);
     }

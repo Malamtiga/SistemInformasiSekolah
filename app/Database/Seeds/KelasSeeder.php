@@ -11,7 +11,7 @@ class KelasSeeder extends Seeder
     {
             $id = (new KelasModel())->insert([
                 'tingkat'             => '1',
-                'kelas'               => '1',
+                'kelas'               => 'A',
                 'pegawai_id'          => '1',
                 'tahun_ajaran_id'     => '1',
                

@@ -26,6 +26,7 @@
                             <th>Nip</th>
                             <th>Nama</th>
                             <th>Gelar</th>
+                            <th>Gender</th>
                             <th>Email</th>
                             <th>Bagian</th>
                             <th>Aksi</th>
@@ -50,12 +51,35 @@
                                 <input type="text" name="nip" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Nama</label>
+                                <label class="form-label">Nama Depan</label>
                                 <input type="text" name="nama_depan" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Gelar</label>
+                                <label class="form-label">Nama Belakang</label>
+                                <input type="text" name="nama_belakang" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Gelar Depan</label>
                                 <input type="text" name="gelar_depan" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Gelar Belakang</label>
+                                <input type="text" name="gelar_belakang" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Gender</label>
+                                <select name="gender" class="form-control">
+                                    <option value="L">Laki - Laki</option>
+                                    <option value="P">Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">No Telp</label>
+                                <input type="text" name="no_telp" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">No WA</label>
+                                <input type="text" name="no_wa" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Email</label>
@@ -75,6 +99,26 @@
                                         }
                                     ?>
                                 </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Alamat</label>
+                                <input type="text" name="alamat" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Kota</label>
+                                <input type="text" name="kota" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Tanggal Lahir</label>
+                                <input type="date" name="tgl_lahir" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Tempat Lahir</label>
+                                <input type="text" name="tempat_lahir" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Sandi</label>
+                                <input type="text" name="sandi" class="form-control">
                             </div>
                         </form>
                         </div>
@@ -130,9 +174,19 @@
                 $('input[name=id]').val(e.id);
                 $('input[name=nip]').val(e.nip);
                 $('input[name=nama_depan]').val(e.nama_depan);
+                $('input[name=nama_belakang]').val(e.nama_belakang);
                 $('input[name=gelar_depan]').val(e.gelar_depan);
+                $('input[name=gelar_belakang]').val(e.gelar_belakang);
+                $('input[name=gender]').val(e.gender);
+                $('input[name=no_telp]').val(e.no_telp);
+                $('input[name=no_wa]').val(e.no_wa);
                 $('input[name=email]').val(e.email);
                 $('input[name=bagian_id]').val(e.bagian_id);
+                $('input[name=alamat]').val(e.alamat);
+                $('input[name=kota]').val(e.kota);
+                $('input[name=tgl_lahir]').val(e.tgl_lahir);
+                $('input[name=tempat_lahir]').val(e.tempat_lahir);
+                $('input[name=sandi]').val(e.sandi);
                 $('#modalForm').modal('show');
                 $('input[name=_method]').val('patch');
 
@@ -167,9 +221,23 @@
                     }
                 },
                 {data: 'nip',},
-                {data: 'nama_depan',},
+                { data: 'nama_depan', render:(data,type,row,meta)=>{
+                    return `${data} ${row['nama_belakang']}`;
+                }},
                 {data: 'gelar_depan',},
+                {data: 'gender',
+                    render: (data,type,row,meta)=>{
+                        if(data === 'L'){
+                            return 'Laki - Laki';
+                        }
+                        else if(data === 'P'){
+                            return 'Perempuan';
+                        }
+                        return data;
+                    }
+                },
                 {data: 'email',},
+                
                 { data: 'nama', render:(data,type,row,meta)=>{
                     return `${data} `;
                 }},

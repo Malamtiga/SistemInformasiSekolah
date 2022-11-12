@@ -20,7 +20,7 @@ class KelasSiswaController extends BaseController
         $kls = KelassiswaModel::view();
          
         return (new Datatable($kls))
-        ->setFieldFilter([ 'kelas' ,'nis', 'nama_depan' ,  'gender'])
+        ->setFieldFilter([ 'tingkat', 'kelas' ,'nis', 'nama_depan' ,  'gender'])
         ->draw();
     }
     public function show($id){

@@ -39,6 +39,8 @@ class PendidikanGuruController extends BaseController
             'jenjang'     => $this->request->getVar('jenjang'),
             'jurusan'     => $this->request->getVar('jurusan'),
             'asal_sekolah'=> $this->request->getVar('asal_sekolah'),
+            'tahun_lulus'=> $this->request->getVar('tahun_lulus'),
+            'nilai_ijasah'=> $this->request->getVar('nilai_ijasah'),
         ]);
         return $this->response->setJSON(['id' => $id])
         ->setStatusCode(intval($id)> 0 ? 200 : 406);  
@@ -55,6 +57,8 @@ class PendidikanGuruController extends BaseController
             'jenjang'     => $this->request->getVar('jenjang'),
             'jurusan'     => $this->request->getVar('jurusan'),
             'asal_sekolah'=> $this->request->getVar('asal_sekolah'),
+            'tahun_lulus'=> $this->request->getVar('tahun_lulus'),
+            'nilai_ijasah'=> $this->request->getVar('nilai_ijasah'),
         ]);
         return $this->response->setJSON(['result'=>$hasil]);
     }

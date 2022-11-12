@@ -49,7 +49,7 @@
                                         $r = (new PenilaianModel())->findAll();
                                         
                                         foreach($r as $k){
-                                            echo "<option value='{$k['id']}'>{$k['total_nilai']} - {$k['deskripsi_nilai']}</option>";
+                                            echo "<option value='{$k['id']}'>{$k['total_nilai']}{$k['total_nilai']} - {$k['deskripsi_nilai']}</option>";
                                         }
                                     ?>
                                 </select>

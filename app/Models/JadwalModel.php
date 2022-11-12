@@ -45,6 +45,6 @@ class JadwalModel extends Model
         ->join('kelas', 'jadwal.kelas_id=kelas.id', 'left')
         ->join('mapel', 'jadwal.mapel_id=mapel.id', 'left')
         ->join('pegawai', 'pegawai.id=jadwal.pegawai_id', 'left')
-        ->select('jadwal.*, kelas.kelas, mapel.mapel, pegawai.nama_depan, pegawai.nama_belakang');
+        ->select('jadwal.*, kelas.kelas, kelas.tingkat, mapel.mapel, pegawai.nama_depan, pegawai.nama_belakang');
     }
 }

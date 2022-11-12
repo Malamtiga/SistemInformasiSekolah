@@ -19,7 +19,7 @@ class SiswaController extends BaseController
         $sm = SiswaModel::view();
         
         return (new Datatable ($sm))
-                ->setFieldFilter([ 'nis', 'nisn', 'status_masuk' ,'thn_masuk', 'nama_depan'])
+                ->setFieldFilter([ 'nisn', 'nis', 'status_masuk' ,'thn_masuk', 'nama_depan'])
                 ->draw();
     }
     public function show($id){
@@ -32,12 +32,26 @@ class SiswaController extends BaseController
         $sm = new SiswaModel();
 
         $id =  $sm -> insert([
-            'nis'          => $this->request->getVar('nis'),
-            'nisn'         => $this->request->getVar('nisn'),
-            'status_masuk' => $this->request->getVar('status_masuk'),
-            'thn_masuk'    => $this->request->getVar('thn_masuk'),
-            'nama_depan'   => $this->request->getVar('nama_depan'),
-            'kelas_id'     => $this->request->getVar('kelas_id'),
+            'nisn'          => $this->request->getVar('nisn'),
+            'nis'           => $this->request->getVar('nis'),
+            'status_masuk'  => $this->request->getVar('status_masuk'),
+            'thn_masuk'     => $this->request->getVar('thn_masuk'),
+            'nama_depan'    => $this->request->getVar('nama_depan'),
+            'nama_belakang' => $this->request->getVar('nama_belakang'),
+            'nik'           => $this->request->getVar('nik'),
+            'no_kk'         => $this->request->getVar('no_kk'),
+            'gender'        => $this->request->getVar('gender'),
+            'tgl_lahir'     => $this->request->getVar('tgl_lahir'),
+            'tempat_lahir'  => $this->request->getVar('tempat_lahir'),
+            'alamat'        => $this->request->getVar('alamat'),
+            'kota'          => $this->request->getVar('kota'),
+            'kelas_id'      => $this->request->getVar('kelas_id'),
+            'no_telp_rumah' => $this->request->getVar('no_telp_rumah'),
+            'no_hp_ibu'     => $this->request->getVar('no_hp_ibu'),
+            'no_hp_ayah'    => $this->request->getVar('no_hp_ayah'),
+            'nm_ayah'       => $this->request->getVar('nm_ayah'),
+            'nm_ibu'        => $this->request->getVar('nm_ibu'),
+            'nm_wali'       => $this->request->getVar('nm_wali'),
         ]);
         return $this->response->setJSON(['id' => $id])
         ->setStatusCode(intval($id)> 0 ? 200 : 406);  
@@ -50,12 +64,26 @@ class SiswaController extends BaseController
         throw PageNotFoundException::forPageNotFound();
         
         $hasil = $sm->update($id,[
-            'nis'          => $this->request->getVar('nis'),
-            'nisn'         => $this->request->getVar('nisn'),
-            'status_masuk' => $this->request->getVar('status_masuk'),
-            'thn_masuk'    => $this->request->getVar('thn_masuk'),
-            'nama_depan'   => $this->request->getVar('nama_depan'),
-            'kelas_id'     => $this->request->getVar('kelas_id'),
+            'nisn'          => $this->request->getVar('nisn'),
+            'nis'           => $this->request->getVar('nis'),
+            'status_masuk'  => $this->request->getVar('status_masuk'),
+            'thn_masuk'     => $this->request->getVar('thn_masuk'),
+            'nama_depan'    => $this->request->getVar('nama_depan'),
+            'nama_belakang' => $this->request->getVar('nama_belakang'),
+            'nik'           => $this->request->getVar('nik'),
+            'no_kk'         => $this->request->getVar('no_kk'),
+            'gender'        => $this->request->getVar('gender'),
+            'tgl_lahir'     => $this->request->getVar('tgl_lahir'),
+            'tempat_lahir'  => $this->request->getVar('tempat_lahir'),
+            'alamat'        => $this->request->getVar('alamat'),
+            'kota'          => $this->request->getVar('kota'),
+            'kelas_id'      => $this->request->getVar('kelas_id'),
+            'no_telp_rumah' => $this->request->getVar('no_telp_rumah'),
+            'no_hp_ibu'     => $this->request->getVar('no_hp_ibu'),
+            'no_hp_ayah'    => $this->request->getVar('no_hp_ayah'),
+            'nm_ayah'       => $this->request->getVar('nm_ayah'),
+            'nm_ibu'        => $this->request->getVar('nm_ibu'),
+            'nm_wali'       => $this->request->getVar('nm_wali'),
         ]);
         return $this->response->setJSON(['result'=>$hasil]);
     }

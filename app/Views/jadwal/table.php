@@ -55,7 +55,7 @@
                                         $r = (new KelasModel())->findAll();
                                         
                                         foreach($r as $k){
-                                            echo "<option value='{$k['id']}'>{$k['kelas']}</option>";
+                                            echo "<option value='{$k['id']}'>{$k['tingkat']} {$k['kelas']}</option>";
                                         }
                                     ?>
                                 </select>
@@ -186,9 +186,12 @@
                         return meta.settings._iDisplayStart + meta.row + 1;
                     }
                 },
-                {data: 'hari',},
-                {data: 'kelas', render:(data,type,row,meta)=>{
-                    return `${data} `;
+                {data: 'hari', render:(data,type,row,meta)=>{
+                    let map = {'1' : 'Minggu', '2': 'Senin', '3':'Selasa', '4':'Rabu', '5':'Kamis', '6':'Jumat', '7':'Sabtu'};
+                    return `${map[row['hari']] ?? ''}`;
+                }},
+                {data: 'tingkat', render:(data,type,row,meta)=>{
+                    return `${data} ${row['kelas']}`;
                 }},
                 {data: 'mapel', render:(data,type,row,meta)=>{
                     return `${data}`;

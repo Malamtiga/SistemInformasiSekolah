@@ -17,7 +17,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Nama</th>
+                            <th>Nama Guru</th>
                             <th>Jenjang</th>
                             <th>Jurusan</th>
                             <th>Asal Sekolah</th>
@@ -39,7 +39,7 @@
                             <input type="hidden" name="id" />
                             <input type="hidden" name="_method" />
                             <div class="mb-3">
-                                <label class="form-label">Nama</label>
+                                <label class="form-label">Nama Guru</label>
                                 <select name="pegawai_id" class="form-control">
                                 <?php
                                         use App\Models\PegawaiModel;
@@ -48,7 +48,7 @@
                                         $r = (new PegawaiModel())->findAll();
                                         
                                         foreach($r as $k){
-                                            echo "<option value='{$k['id']}'>{$k['nama_depan']}</option>";
+                                            echo "<option value='{$k['id']}'>{$k['nama_depan']} {$k['nama_belakang']}</option>";
                                         }
                                     ?>
                                 </select>
@@ -58,12 +58,20 @@
                                 <input type="text" name="jenjang" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Gelar</label>
+                                <label class="form-label">Jurusan</label>
                                 <input type="text" name="jurusan" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Asal Sekolah</label>
                                 <input type="text" name="asal_sekolah" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Tahun Lulus</label>
+                                <input type="date" name="tahun_lulus" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Nilai Ijasah</label>
+                                <input type="text" name="nilai_ijasah" class="form-control">
                             </div>
                            
                         </form>
@@ -122,6 +130,8 @@
                 $('input[name=jenjang]').val(e.jenjang);
                 $('input[name=jurusan]').val(e.jurusan);
                 $('input[name=asal_sekolah]').val(e.asal_sekolah);
+                $('input[name=tahun_lulus]').val(e.tahun_lulus);
+                $('input[name=nilai_ijasah]').val(e.nilai_ijasah);
                 $('#modalForm').modal('show');
                 $('input[name=_method]').val('patch');
 
@@ -156,7 +166,7 @@
                     }
                 },
                 { data: 'nama_depan', render:(data,type,row,meta)=>{
-                    return `${data} `;
+                    return `${data} ${row['nama_belakang']}`;
                 }},
                 {data: 'jenjang',},
                 {data: 'jurusan',},

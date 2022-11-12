@@ -75,7 +75,6 @@
                             <div class="mb-3">
                                 <label class="form-label">Status Hadir</label>
                                 <select name="status_hadir" class="form-control">
-                                    <option>Kehadiran Siswa</option>
                                     <option value="Y">Hadir</option>
                                     <option value="T">Tidak Hadir</option>
                                 </select>

@@ -47,7 +47,7 @@
                                         $r = (new KelasModel())->findAll();
                                         
                                         foreach($r as $k){
-                                            echo "<option value='{$k['id']}'>{$k['kelas']}</option>";
+                                            echo "<option value='{$k['id']}'>{$k['tingkat']} {$k['kelas']}</option>";
                                         }
                                     ?>
                                 </select>
@@ -158,8 +158,8 @@
                         return meta.settings._iDisplayStart + meta.row + 1;
                     }
                 },
-                { data: 'kelas', render:(data,type,row,meta)=>{
-                    return `${data} `;
+                { data: 'tingkat', render:(data,type,row,meta)=>{
+                    return `${data} ${row['kelas']}`;
                 }},
                 {data: 'nama_depan', render:(data,type,row,meta)=>{
                     return `${data} - ${row['nis']} - ${row['gender']}`;

@@ -53,7 +53,6 @@
                             <div class="mb-3">
                                 <label class="form-label">Status Aktif</label>
                                 <select name="status_aktif" class="form-control">
-                                    <option>Status Aktif</option>
                                     <option value="Y">Aktif </option>
                                     <option value="T">Tidak Aktif</option>
                                 </select>

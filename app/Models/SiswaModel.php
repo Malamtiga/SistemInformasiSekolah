@@ -43,6 +43,6 @@ class SiswaModel extends Model
     static function view(){
         return (new SiswaModel())
                 ->join('kelas', 'kelas.id=kelas_id')
-                ->select('siswa.*, kelas.kelas');
+                ->select('siswa.*, kelas.kelas, kelas.tingkat');
     }
 }

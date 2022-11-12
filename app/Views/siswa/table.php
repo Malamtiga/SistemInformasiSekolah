@@ -49,10 +49,9 @@
                                 <label class="form-label">NIS</label>
                                 <input type="text" name="nis" class="form-control">
                             </div>
-                            < <div class="mb-3">
+                             <div class="mb-3">
                                 <label class="form-label">Status Masuk</label>
                                 <select name="status_masuk" class="form-control">
-                                    <option>STATUS MASUK</option>
                                     <option value="A">Asal</option>
                                     <option value="P">Pindahan</option>
                                 </select>
@@ -62,8 +61,43 @@
                                 <input type="date" name="thn_masuk" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Nama Siswa</label>
+                                <label class="form-label">Nama Depan</label>
                                 <input type="text" name="nama_depan" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Nama Belakang</label>
+                                <input type="text" name="nama_belakang" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">NIK</label>
+                                <input type="text" name="nik" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">NO KK</label>
+                                <input type="text" name="no_kk" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Gender</label>
+                                <select name="gender" class="form-control">
+                                    <option value="L">Laki - Laki</option>
+                                    <option value="P">Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Tanggal Lahir</label>
+                                <input type="date" name="tgl_lahir" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Tempat Lahir</label>
+                                <input type="date" name="tempat_lahir" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Alamat</label>
+                                <input type="text" name="alamat" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Kota</label>
+                                <input type="text" name="kota" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Kelas Sekarang</label>
@@ -75,10 +109,35 @@
                                         $r = (new KelasModel())->findAll();
                                         
                                         foreach($r as $k){
-                                            echo "<option value='{$k['id']}'>{$k['kelas']}</option>";
+                                            echo "<option value='{$k['id']}'>{$k['tingkat']} {$k['kelas']}</option>";
                                         }
                                     ?>
                                 </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">No Telepon</label>
+                                <input type="text" name="no_telp_rumah" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">No Hp Ibu</label>
+                                <input type="text" name="no_hp_ibu" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">No Hp Ayah</label>
+                                <input type="text" name="no_hp_ayah" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Nama Ayah</label>
+                                <input type="text" name="nm_ayah" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Nama Ibu</label>
+                                <input type="text" name="nm_ibu" class="form-control">
+                            </div>
+                          
+                            <div class="mb-3">
+                                <label class="form-label">Nama Wali</label>
+                                <input type="text" name="nm_wali" class="form-control">
                             </div>
                         </form>
                         </div>
@@ -135,7 +194,21 @@
                 $('input[name=status_masuk]').val(e.status_masuk);
                 $('input[name=thn_masuk]').val(e.thn_masuk);
                 $('input[name=nama_depan]').val(e.nama_depan);
+                $('input[name=nama_belakang]').val(e.nama_belakang);
+                $('input[name=nik]').val(e.nik);
+                $('input[name=no_kk]').val(e.no_kk);
+                $('input[name=gender]').val(e.gender);
+                $('input[name=tgl_lahir]').val(e.tgl_lahir);
+                $('input[name=tempat_lahir]').val(e.tempat_lahir);
+                $('input[name=alamat]').val(e.alamat);
+                $('input[name=kota]').val(e.kota);
                 $('input[name=kelas_id]').val(e.kelas_id);
+                $('input[name=no_telp_rumah]').val(e.no_telp_rumah);
+                $('input[name=no_hp_ibu]').val(e.no_hp_ibu);
+                $('input[name=no_hp_ayah]').val(e.no_hp_ayah);
+                $('input[name=nm_ayah]').val(e.nm_ayah);
+                $('input[name=nm_ibu]').val(e.nm_ibu);
+                $('input[name=nm_wali]').val(e.nm_wali);
                 $('#modalForm').modal('show');
                 $('input[name=_method]').val('patch');
 
@@ -182,9 +255,11 @@
                     }
                 },
                 {data: 'thn_masuk',},
-                {data: 'nama_depan',},
-                {data: 'kelas', render:(data,type,row,meta)=>{
-                    return `${data} `;
+                { data: 'nama_depan', render:(data,type,row,meta)=>{
+                    return `${data} ${row['nama_belakang']}`;
+                }},
+                {data: 'tingkat', render:(data,type,row,meta)=>{
+                    return `${data} ${row['kelas']} `;
                 }},
                 {data: 'id',
                     render: (data,type,meta,row)=>{

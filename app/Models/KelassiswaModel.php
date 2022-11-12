@@ -44,7 +44,7 @@ class KelassiswaModel extends Model
         return (new KelassiswaModel())
                 ->join('kelas', 'kelas.id=kelas_id')
                 ->join('siswa', 'siswa.id=siswa_id')
-                ->select('kelas_siswa.*, kelas.kelas, siswa.nis, siswa.nama_depan,
+                ->select('kelas_siswa.*, kelas.kelas,kelas.tingkat, siswa.nis, siswa.nama_depan,
                 siswa.gender');
     }
 
