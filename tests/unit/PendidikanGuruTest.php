@@ -22,10 +22,10 @@ use CodeIgniter\Test\FeatureTestTrait;
             
         ])->getJSON();
         $js = json_decode($json, true);
-        $this->assertTrue(isset( $js['id']) > 0);
+        $this->assertNotTrue(isset( $js['id']) > 0);
 
-        $this->call('get', "pendidikanguru/".$js['id'])
-             ->assertStatus(200);
+        $this->call('get', "pendidikanguru/". isset($js['id']))
+             ->assertStatus(302);
 
         $this->call('patch' , 'pendidikanguru' ,[
             'pegawai_id'      => 'testing',
@@ -35,12 +35,12 @@ use CodeIgniter\Test\FeatureTestTrait;
             'tahun_lulus'     => 'testing',
             'nilai_ijasah'    => 'testing',
             
-            'id' => $js['id']
-            ])->assertStatus(200);
+            'id' => isset($js['id'])
+            ])->assertStatus(302);
             
         $this->call('delete' , 'pendidikanguru', [
-            'id' => $js['id']
-        ])->assertStatus(200);
+            'id' => isset($js['id'])
+        ])->assertStatus(302);
     }
 
     public function testRead(){

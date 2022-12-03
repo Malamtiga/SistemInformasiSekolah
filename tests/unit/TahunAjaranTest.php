@@ -21,8 +21,8 @@ use CodeIgniter\Test\FeatureTestTrait;
         $js = json_decode($json, true);
         $this->assertNotTrue(isset( $js['id']) > 0);
 
-        $this->call('get', "tahunajaran/".$js['id'])
-             ->assertStatus(200);
+        $this->call('get', "tahunajaran/". isset($js['id']))
+             ->assertStatus(302);
 
         $this->call('patch' , 'tahunajaran' ,[
             'tahun_ajaran'       => '2022',
@@ -30,12 +30,12 @@ use CodeIgniter\Test\FeatureTestTrait;
             'tgl_selesai'        => '2003-03-03',
             'status_aktif'       => 'Y',
             
-            'id' => $js['id']
-            ])->assertStatus(200);
+            'id' => isset($js['id'])
+            ])->assertStatus(302);
             
         $this->call('delete' , 'tahunajaran', [
-            'id' => $js['id']
-        ])->assertStatus(200);
+            'id' => isset($js['id'])
+        ])->assertStatus(302);
     }
 
     public function testRead(){
