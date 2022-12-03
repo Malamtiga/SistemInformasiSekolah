@@ -4,16 +4,91 @@ namespace App\Controllers;
 use Agoenxz21\Datatables\Datatable;
 use App\Controllers\BaseController;
 use App\Models\SiswaModel;
+use App\Models\KelasModel;
+use CodeIgniter\Email\Email;
 use CodeIgniter\Exceptions\PageNotFoundException;
+use Config\Email as ConfigEmail;
 
 use function PHPUnit\Framework\returnSelf;
 
 class SiswaController extends BaseController
 {
+    public function loginsiswa(){
+        $email = $this->request->getPost('email');
+        $password = $this->request->getPost('sandi');
+
+        $siswa = (new SiswaModel())->where('email', $email)->first();
+
+        if($siswa == null){
+            return $this->response->setJSON(['message'=>'Email tidak terdaftar'])
+                        ->setStatusCode(404);
+        }
+
+        $cekPaswword = password_verify($password, $siswa['sandi']);
+        if($cekPaswword == false){
+            return $this->response->setJSON(['message'=>'Email dan Password tidak cocok'])
+                        ->setStatusCode(403);
+        }
+
+        $this->session->set('siswa', $siswa);
+        return $this->response->setJSON(['message'=>"Selamat datang {$siswa['nama_depan']}"])
+                    ->setStatusCode(200);
+    }
+
+    public function viewLoginsiswa(){
+        return view('backend/siswa/login');
+    }
+
+    public function lupaPasswordsiswa(){
+        $_email = $this->request->getPost('email');
+        $password = $this->request->getPost('sandi');
+
+        $siswa = (new SiswaModel())->where('email', $_email)->first();
+
+        if($siswa == null){
+            return $this->response->setJSON(['message'=>'Email tidak terdaftar'])
+                        ->setStatusCode(404);
+        }
+
+        $sandibaru =substr( md5( date('Y-m-dH:i:s')),5,5 );
+        $siswa['sandi'] = password_hash($sandibaru,PASSWORD_BCRYPT);
+        $r = (new SiswaModel())->update($siswa['id'], $siswa);
+
+        if($r == false ){
+            return $this->response->setJSON(['message'=>'Gagal merubah sandi'])
+                        ->setStatusCode(502);
+        }
+
+        $email = new Email(new ConfigEmail());
+        $email->setFrom('vbona2016@gmail.com', 'Sistem Informasi Sekolah');
+        $email->setTo($siswa['email']);
+        $email->setSubject('Reset sandi Pengguna');
+        $email->setMessage("Halo {$siswa['nama_depan']} telah meminta reset baru. Reset baru kamu adalah <b>$sandibaru</b>");
+        $r = $email->send();
+
+        if($r == true){
+            return $this->response->setJSON(['message'=>"Sandi baru sudah dikirim ke alamat email $_email"])
+                                  ->setStatusCode(200);
+        }else{
+            return $this->response->setJSON(['message'=>"Maaf ada kesalahan pengiriman email $_email"])
+                                 ->setStatusCode(500);
+        }
+    }
+
+    public function viewLupaPasswordsiswa(){
+        return view('lupa_password');
+    }
+
+    public function logoutsiswa(){
+        $this->session->destroy();
+        return redirect()->to('siswa/login');
+    }
     
     public function index()
     {
-        return view('siswa/table');       
+        return view('backend/siswa/table',[
+            'kelas' => (new KelasModel())->findAll()
+            ]);                
     }
     public function all(){
         $sm = SiswaModel::view();
@@ -30,6 +105,7 @@ class SiswaController extends BaseController
     }
     public function store(){
         $sm = new SiswaModel();
+        $sandi = $this->request->getVar('sandi');
 
         $id =  $sm -> insert([
             'nisn'          => $this->request->getVar('nisn'),
@@ -52,6 +128,8 @@ class SiswaController extends BaseController
             'nm_ayah'       => $this->request->getVar('nm_ayah'),
             'nm_ibu'        => $this->request->getVar('nm_ibu'),
             'nm_wali'       => $this->request->getVar('nm_wali'),
+            'email'         => $this->request->getVar('email'),
+            'sandi'         => password_hash($sandi, PASSWORD_BCRYPT),
         ]);
         return $this->response->setJSON(['id' => $id])
         ->setStatusCode(intval($id)> 0 ? 200 : 406);  
@@ -59,6 +137,7 @@ class SiswaController extends BaseController
     public function update(){
         $sm = new SiswaModel();
         $id = (int)$this->request->getVar('id');
+        $sandi = $this->request->getVar('sandi');
         
         if($sm->find($id) == null)
         throw PageNotFoundException::forPageNotFound();
@@ -84,6 +163,8 @@ class SiswaController extends BaseController
             'nm_ayah'       => $this->request->getVar('nm_ayah'),
             'nm_ibu'        => $this->request->getVar('nm_ibu'),
             'nm_wali'       => $this->request->getVar('nm_wali'),
+            'email'         => $this->request->getVar('email'),
+            'sandi'         => password_hash($sandi, PASSWORD_BCRYPT),
         ]);
         return $this->response->setJSON(['result'=>$hasil]);
     }

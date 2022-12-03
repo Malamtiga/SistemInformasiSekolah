@@ -5,17 +5,27 @@ namespace App\Controllers;
 use Agoenxz21\Datatables\Datatable;
 use App\Controllers\BaseController;
 use App\Models\JadwalModel;
+use App\Models\KelasModel;
+use App\Models\MapelModel;
+use App\Models\PegawaiModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 
 class JadwalController extends BaseController
 {
     public function index()
     {
-        return view('jadwal/table');       
+        return view('backend/jadwal/table',[
+            'kelas' => (new KelasModel())->findAll()
+            ]);    
+            return view('backend/jadwal/table',[
+                'mapel' => (new MapelModel())->findAll()
+                ]);      
+                return view('backend/jadwal/table',[
+                    'pegawai' => (new PegawaiModel())->findAll()
+                    ]);             
     }
     public function all(){
-        $jm = JadwalModel::view();
-        return (new Datatable ($jm))
+        return(new Datatable(JadwalModel::view()))
                 ->setFieldFilter(['hari', 'jam_mulai' , 
                 'jam_selesai' , 'nama_depan' , 'nama_belakang'])
                 ->draw();

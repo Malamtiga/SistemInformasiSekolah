@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Agoenxz21\Datatables\Datatable;
 use App\Controllers\BaseController;
-use App\Database\Migrations\Pegawai;
+use App\Models\BagianModel;
 use App\Models\PegawaiModel;
 use CodeIgniter\Email\Email;
 use CodeIgniter\Exceptions\PageNotFoundException;
@@ -36,7 +36,7 @@ class PegawaiController extends BaseController
     }
 
     public function viewLogin(){
-        return view('login');
+        return view('backend/login');
     }
 
     public function lupaPassword(){
@@ -86,13 +86,18 @@ class PegawaiController extends BaseController
 
     public function index()
     {
-        return view('pegawai/table');       
+        return view('backend/pegawai/table',[
+        'nama' => (new BagianModel())->findAll()
+        ]);      
     }
+
+    
     public function all(){
         $pegm = PegawaiModel::view();
          
         return (new Datatable($pegm))
-        ->setFieldFilter([ 'nip' , 'nama_depan' , 'gelar' ,  'email', 'nama'])
+        ->setFieldFilter([ 'nip' , 'nama_depan', 'nama_belakang',
+         'gelar_depan' , 'gender',  'email',])
         ->draw();
     }
     public function show($id){
@@ -122,8 +127,11 @@ class PegawaiController extends BaseController
             'tempat_lahir'  => $this->request->getVar('tempat_lahir'),
             'sandi'         => password_hash($sandi, PASSWORD_BCRYPT),
         ]);
+        if($id > 0){
+            $this->savefile($id);
+        }
         return $this->response->setJSON(['id' => $id])
-        ->setStatusCode(intval($id)> 0 ? 200 : 406);  
+        ->setStatusCode(intval($id)> 0 ? 200 : 406);
     }
     public function update(){
         $pegm = new PegawaiModel();
@@ -150,12 +158,45 @@ class PegawaiController extends BaseController
             'tempat_lahir'  => $this->request->getVar('tempat_lahir'),
             'sandi'         => password_hash($sandi, PASSWORD_BCRYPT),
         ]);
+        if($hasil == true){
+            $this->savefile($id);
+        }
         return $this->response->setJSON(['result'=>$hasil]);
     }
+
     public function delete(){
         $pegm = new PegawaiModel();
         $id = $this->request->getVar('id');
         $hasil = $pegm->delete($id);
         return $this->response->setJSON(['result' => $hasil]);
+    }
+
+    private function savefile($id){
+        $file = $this->request->getFile('berkas');
+
+        if ($file->hasMoved()== false){
+            $path = WRITEPATH . 'uploads/pegawai';
+
+            if(file_exists($path) == false){
+                @mkdir($path);
+            }
+       $file->store('pegawai', $id . '.jpg');
+        }
+       
+    }
+
+    public function berkas($id){
+        $pm = new PegawaiModel();
+        $dt = $pm->find($id);
+        if($dt == null)throw PageNotFoundException::forPageNotFound();
+
+        $file = WRITEPATH . 'uploads/pegawai'.$id.'.jpg';
+        if(file_exists($file) == false){
+        throw PageNotFoundException::forPageNotFound();
+    }
+    
+    echo file_get_contents($file);
+    return $this->response->setHeader('Content-type','image/jpeg')
+                ->sendBody();        
     }    
 }

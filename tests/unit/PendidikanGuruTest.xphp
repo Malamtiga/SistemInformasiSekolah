@@ -1,0 +1,50 @@
+<?php
+
+use CodeIgniter\Test\CIUnitTestCase;
+use CodeIgniter\Test\FeatureTestTrait;
+
+/**
+ * @internal
+ */
+
+ class PendidikanGuruTest extends CIUnitTestCase{
+    
+    use FeatureTestTrait;
+
+    public function testCreateShowUpdateDelete(){
+        $json = $this->call('post' , 'pendidikanguru' , [
+            'pegawai_id'      => 'testing',
+            'jenjang'         => 'testing',
+            'jurusan'         => 'testing',
+            'asal_sekolah'    => 'testing',
+            'tahun_lulus'     => 'testing',
+            'nilai_ijasah'    => 'testing',
+            
+        ])->getJSON();
+        $js = json_decode($json, true);
+        $this->assertTrue(isset( $js['id']) > 0);
+
+        $this->call('get', "pendidikanguru/".$js['id'])
+             ->assertStatus(200);
+
+        $this->call('patch' , 'pendidikanguru' ,[
+            'pegawai_id'      => 'testing',
+            'jenjang'         => 'testing',
+            'jurusan'         => 'testing',
+            'asal_sekolah'    => 'testing',
+            'tahun_lulus'     => 'testing',
+            'nilai_ijasah'    => 'testing',
+            
+            'id' => $js['id']
+            ])->assertStatus(200);
+            
+        $this->call('delete' , 'pendidikanguru', [
+            'id' => $js['id']
+        ])->assertStatus(200);
+    }
+
+    public function testRead(){
+        $this->call('get' , 'pendidikanguru/all' )
+             ->assertStatus(302);
+    }
+ }

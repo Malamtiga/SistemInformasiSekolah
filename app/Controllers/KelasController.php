@@ -7,6 +7,7 @@ use App\Controllers\BaseController;
 
 use App\Models\KelasModel;
 use App\Models\PegawaiModel;
+use App\Models\TahunAjaranModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 
 
@@ -15,7 +16,12 @@ class KelasController extends BaseController
 {
     public function index()
     {
-        return view('kelas/table');       
+        return view('backend/kelas/table',[
+            'pegawai' => (new PegawaiModel())->findAll()
+            ]);          
+            return view('backend/kelas/table',[
+                'tahun_ajaran' => (new TahunAjaranModel())->findAll()
+                ]);          
     }
     public function all(){
         $km = KelasModel::view();

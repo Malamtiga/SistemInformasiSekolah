@@ -41,11 +41,16 @@ class KelassiswaModel extends Model
     protected $afterDelete    = [];
 
     static function view(){
-        return (new KelassiswaModel())
+        $view = (new KelassiswaModel())
+        ->select('kelas_siswa.*, kelas.kelas,kelas.tingkat, siswa.nis, siswa.nama_depan,
+        siswa.gender')
                 ->join('kelas', 'kelas.id=kelas_id')
                 ->join('siswa', 'siswa.id=siswa_id')
-                ->select('kelas_siswa.*, kelas.kelas,kelas.tingkat, siswa.nis, siswa.nama_depan,
-                siswa.gender');
+                ->builder();
+
+                $r = db_connect()->newQuery()->fromSubquery($view, 'tbl');
+                $r->table = 'tbl';
+                return $r;
     }
 
 }

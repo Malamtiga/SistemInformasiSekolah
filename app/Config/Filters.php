@@ -3,6 +3,8 @@
 namespace Config;
 use App\Filters\LoginFilter;
 use App\Filters\CekLoggedInFilter;
+use App\Filters\LoginSiswaFilter;
+use App\Filters\SiswaIsLogin;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -25,7 +27,9 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
         'isLoggedIn'    => LoginFilter::class,
-        'CekLoggedIn'    => CekLoggedInFilter::class
+        'CekLoggedIn'   => CekLoggedInFilter::class,
+        'authSiswa'     =>LoginSiswaFilter::class,
+        'masukSIS'      =>SiswaIsLogin::class
     ];
 
     /**

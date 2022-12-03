@@ -41,8 +41,13 @@ class SiswaModel extends Model
     protected $afterDelete    = [];
 
     static function view(){
-        return (new SiswaModel())
+        $view =  (new SiswaModel())
+        ->select('siswa.*, kelas.kelas, kelas.tingkat')
                 ->join('kelas', 'kelas.id=kelas_id')
-                ->select('siswa.*, kelas.kelas, kelas.tingkat');
+                ->builder();
+
+                $r = db_connect()->newQuery()->fromSubquery($view, 'tbl');
+                $r->table = 'tbl';
+                return $r;
     }
 }

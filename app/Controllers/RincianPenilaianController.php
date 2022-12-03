@@ -2,7 +2,10 @@
 
 namespace App\Controllers;
 use Agoenxz21\Datatables\Datatable;
-use App\Controllers\BaseController;;
+use App\Controllers\BaseController;
+use App\Models\PenilaianModel;
+
+;
 use App\Models\RincianpenilaianModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 
@@ -13,7 +16,9 @@ class RincianPenilaianController extends BaseController
     
     public function index()
     {
-        return view('rincianpenilaian/table');       
+        return view('backend/rincianpenilaian/table',[
+            'penilaian' => (new PenilaianModel())->findAll()
+            ]);        
     }
     public function all(){
         

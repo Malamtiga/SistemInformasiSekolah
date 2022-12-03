@@ -41,9 +41,14 @@ class KelasModel extends Model
     protected $afterDelete    = [];
 
      static function view(){
-        return (new KelasModel())
+        $view = (new KelasModel())
+                ->select('kelas.*, pegawai.nama_depan , tahun_ajaran.tahun_ajaran')
                 ->join('pegawai', 'pegawai.id=pegawai_id')
                 ->join('tahun_ajaran', 'tahun_ajaran.id=tahun_ajaran_id')
-                ->select('kelas.*, pegawai.nama_depan , tahun_ajaran.tahun_ajaran');
+                ->builder();
+
+                $r = db_connect()->newQuery()->fromSubquery($view, 'tbl');
+                $r->table = 'tbl';
+                return $r;
     }
 }

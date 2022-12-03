@@ -30,6 +30,8 @@ class SiswaSeeder extends Seeder
             'nm_ayah'       => 'Johanes',
             'nm_ibu'        => 'Siska',
             'nm_wali'       => 'Rusdi',
+            'email'         => 'ricko@gmail.com',
+            'sandi'         => password_hash('123456', PASSWORD_BCRYPT), 
         ]);
         echo "hasil id = $id";
     }

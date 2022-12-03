@@ -41,8 +41,13 @@ class PendidikanguruModel extends Model
     protected $afterDelete    = [];
 
     static function view(){
-        return (new PendidikanguruModel())
+        $view = (new PendidikanguruModel())
+        ->select('pendidikan_guru.*, pegawai.nama_depan, pegawai.nama_belakang')
                 ->join('pegawai', 'pegawai.id=pegawai_id')
-                ->select('pendidikan_guru.*, pegawai.nama_depan, pegawai.nama_belakang');
+                ->builder();
+
+                $r = db_connect()->newQuery()->fromSubquery($view, 'tbl');
+                $r->table = 'tbl';
+                return $r;
     }
 }

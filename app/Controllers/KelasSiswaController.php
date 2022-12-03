@@ -4,8 +4,9 @@ namespace App\Controllers;
 
 use Agoenxz21\Datatables\Datatable;
 use App\Controllers\BaseController;
-
+use App\Models\KelasModel;
 use App\Models\KelassiswaModel;
+use App\Models\SiswaModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 
 
@@ -14,7 +15,12 @@ class KelasSiswaController extends BaseController
 {
     public function index()
     {
-        return view('kelassiswa/table');       
+        return view('backend/kelassiswa/table',[
+            'kelas' => (new KelasModel())->findAll()
+            ]);  
+            return view('backend/kelassiswa/table',[
+                'siswa' => (new SiswaModel())->findAll()
+                ]);             
     }
     public function all(){
         $kls = KelassiswaModel::view();

@@ -13,7 +13,7 @@ class TahunAjaranController extends BaseController
     
     public function index()
     {
-        return view('tahunajaran/table');       
+        return view('backend/tahunajaran/table');       
     }
     public function all(){
         $mm = new TahunAjaranModel();

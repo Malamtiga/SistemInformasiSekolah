@@ -10,15 +10,15 @@ class PegawaiSeeder extends Seeder
     public function run()
     {
         $id = (new PegawaiModel())->insert([
-            'nip'               => '123454514',
-            'nama_depan'        => 'Gafri',
+            'nip'               => '564543575',
+            'nama_depan'        => 'kolas',
             'nama_belakang'     => 'Ganteng Sekali',
             'gelar_depan'       => 'S.Kom',
             'gelar_belakang'    => 'M.p',
             'gender'            => 'L',
             'no_telp'           => '086512124214',
             'no_wa'             => '086545624933',
-            'email'             => 'gafri@gmail.com',
+            'email'             => 'kolas@gmail.com',
             'bagian_id'         => '3',
             'alamat'            => 'Jalan Tebu',
             'kota'              => 'Pontianak',

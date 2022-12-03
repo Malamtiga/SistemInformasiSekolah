@@ -24,7 +24,10 @@ class LoginFilter implements FilterInterface
             if($p== null){  
            return redirect()->to(site_url('login'));
         }
+   
+   
     }
+    
 
     /**
      * Allows After filters to inspect and modify the response

@@ -27,8 +27,10 @@ class CekLoggedInFilter implements FilterInterface
     {
         $p = session('pegawai');
         if($p != null){  
-       return redirect()->to(url_to('pegawai'));
+       return redirect()->to(url_to('dashboard'));
     }
+
+
     }
 
     /**

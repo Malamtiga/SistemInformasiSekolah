@@ -6,7 +6,9 @@ use Agoenxz21\Datatables;
 use Agoenxz21\Datatables\Datatable;
 use App\Controllers\BaseController;
 use App\Database\Migrations\KehadiranGuru;
+use App\Models\JadwalModel;
 use App\Models\KehadiranguruModel;
+use App\Models\PegawaiModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 
 use function PHPUnit\Framework\returnSelf;
@@ -15,13 +17,18 @@ class KehadiranGuruController extends BaseController
 {
     public function index()
     {
-        return view('kehadiranguru/table');
+        return view('backend/kehadiranguru/table',[
+            'pegawai' => (new PegawaiModel())->findAll()
+            ]);      
+            return view('backend/kehadiranguru/table',[
+                'jadwal' => (new JadwalModel())->findAll()
+                ]);      
     }
     public function all(){
         $kgm = KehadiranguruModel::view();
          
         return (new Datatable($kgm))
-        ->setFieldFilter([ 'waktu_masuk' , 'waktu_keluar' , 'pertemuan' ,  'berita_acara', 'nama_depan',
+        ->setFieldFilter([ 'waktu_masuk' , 'waktu_keluar' , 'pertemuan' , 'berita_acara', 'nama_depan',
             'nama_belakang'])
         ->draw();
     }

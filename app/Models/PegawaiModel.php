@@ -41,8 +41,13 @@ class PegawaiModel extends Model
     protected $afterDelete    = [];
 
     static function view(){
-        return (new PegawaiModel())
+      $view =  (new PegawaiModel())
+               ->select('pegawai.*, bagian.nama')
                 ->join('bagian', 'bagian.id=bagian_id')
-                ->select('pegawai.*, bagian.nama');
+                ->builder();
+
+                $r = db_connect()->newQuery()->fromSubquery($view, 'tbl');
+                $r->table = 'tbl';
+                return $r;
     }
 }

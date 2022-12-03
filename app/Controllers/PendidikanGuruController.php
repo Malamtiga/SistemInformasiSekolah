@@ -4,6 +4,7 @@ namespace App\Controllers;
 use Agoenxz21\Datatables\Datatable;
 use App\Controllers\BaseController;
 use App\Models\KehadiranguruModel;
+use App\Models\PegawaiModel;
 use App\Models\PendidikanguruModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 
@@ -14,7 +15,9 @@ class PendidikanGuruController extends BaseController
     
     public function index()
     {
-        return view('pendidikanguru/table');       
+        return view('backend/pendidikanguru/table',[
+            'pegawai' => (new PegawaiModel())->findAll()
+            ]);          
     }
     public function all(){
         

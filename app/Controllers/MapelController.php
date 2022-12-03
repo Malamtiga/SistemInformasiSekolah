@@ -13,7 +13,7 @@ class MapelController extends BaseController
     
     public function index()
     {
-        return view('mapel/table');       
+        return view('backend/mapel/table');       
     }
     public function all(){
         $mm = new MapelModel();

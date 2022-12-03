@@ -4,8 +4,9 @@ namespace App\Controllers;
 
 use Agoenxz21\Datatables\Datatable;
 use App\Controllers\BaseController;
-
+use App\Models\KehadiranguruModel;
 use App\Models\KehadiransiswaModel;
+use App\Models\SiswaModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 
 
@@ -14,13 +15,18 @@ class KehadiranSiswaController extends BaseController
 {
     public function index()
     {
-        return view('kehadiransiswa/table');       
+        return view('backend/kehadiransiswa/table',[
+            'kehadiran_guru' => (new KehadiranguruModel())->findAll()
+            ]);    
+            return view('backend/kehadiransiswa/table',[
+                'siswa' => (new SiswaModel())->findAll()
+                ]);         
     }
     public function all(){
         $khs = KehadiransiswaModel::view();
          
         return (new Datatable($khs))
-        ->setFieldFilter([ 'waktu_masuk' ,'waktu_keluar', 'nama_depan' , 'nis',  'status_hadir'])
+        ->setFieldFilter([ 'waktu_masuk' ,'waktu_keluar',  'nis', 'siswa' ,   'status_hadir'])
         ->draw();
     }
     public function show($id){
