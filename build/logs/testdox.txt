@@ -1,0 +1,56 @@
+Bagian
+ [x] Create show update delete
+ [x] Read
+
+Jadwal
+ [x] Create show update delete
+ [x] Read
+
+Kehadiran Guru
+ [x] Create show update delete
+ [x] Read
+
+Kehadiran Siswa
+ [x] Create show update delete
+ [x] Read
+
+Kelas Siswa
+ [x] Create show update delete
+ [x] Read
+
+Kelas
+ [x] Create show update delete
+ [x] Read
+
+Mapel
+ [x] Create show update delete
+ [x] Read
+
+Pegawai
+ [x] Login
+ [x] Create show update delete
+ [x] Read
+ [x] Logout
+
+Pendidikan Guru
+ [x] Create show update delete
+ [x] Read
+
+Penilaian
+ [x] Create show update delete
+ [x] Read
+
+Rincian Penilaian
+ [x] Create show update delete
+ [x] Read
+
+Siswa
+ [x] Login
+ [x] Create show update delete
+ [x] Read
+ [x] Logout
+
+Tahun Ajaran
+ [x] Create show update delete
+ [x] Read
+

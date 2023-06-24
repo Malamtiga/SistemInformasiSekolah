@@ -126,6 +126,7 @@ class PegawaiController extends BaseController
             'tgl_lahir'     => $this->request->getVar('tgl_lahir'),
             'tempat_lahir'  => $this->request->getVar('tempat_lahir'),
             'sandi'         => password_hash($sandi, PASSWORD_BCRYPT),
+            'token_reset'   => $this->request->getVar('token_reset'),
         ]);
         if($id > 0){
             $this->savefile($id);
@@ -157,6 +158,7 @@ class PegawaiController extends BaseController
             'tgl_lahir'     => $this->request->getVar('tgl_lahir'),
             'tempat_lahir'  => $this->request->getVar('tempat_lahir'),
             'sandi'         => password_hash($sandi, PASSWORD_BCRYPT),
+            'token_reset'   => $this->request->getVar('token_reset'),
         ]);
         if($hasil == true){
             $this->savefile($id);

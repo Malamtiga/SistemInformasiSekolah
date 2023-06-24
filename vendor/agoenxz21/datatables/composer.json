@@ -1,0 +1,28 @@
+{
+    "name": "agoenxz21/datatables",
+    "type": "library",
+    "description": "Library CI4 untuk menyajikan data pada jQuery DataTable",
+    "keywords": ["library", "ci4", "codeigniter4", "datatable"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Agung Sasongko",
+            "email": "agoenxz21@gmail.com",
+            "role": "Developer"
+        }
+    ], 
+	"require": {
+		"php": ">=7.2",
+		"codeigniter4/framework": "^4"
+	},
+	"autoload": {
+		"psr-4": {
+			"Agoenxz21\\Datatables\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Agoenxz21\\Datatables\\": "src"
+		}
+	}
+}

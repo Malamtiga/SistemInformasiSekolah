@@ -110,10 +110,14 @@
                                 <label class="form-label">Tempat Lahir</label>
                                 <input type="text" name="tempat_lahir" class="form-control">
                             </div>
-                            <div class="mb-3"id = "fileberkas"></div>
+                            <div class="mb-3"id = "fileberkas"></div>      
                             <div class="mb-3">
                                 <label class="form-label">Sandi</label>
                                 <input type="text" name="sandi" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Token Reset</label>
+                                <input type="text" name="token_reset" class="form-control">
                             </div>
                         </form>
                         </div>
@@ -211,6 +215,7 @@
                 $('input[name=tempat_lahir]').val(e.tempat_lahir);
                 Fungsidropify(e.berkas);
                 $('input[name=sandi]').val(e.sandi);
+                $('input[name=token_reset]').val(e.token_reset);
                 $('#modalForm').modal('show');
                 $('input[name=_method]').val('patch');
 

@@ -1,0 +1,594 @@
+CRITICAL - 2022-11-24 02:03:52 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(106): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(179): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 02:04:30 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(106): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(179): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 02:04:42 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(106): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(179): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 02:06:35 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PegawaiController.php on line 98.
+ 1 APPPATH\Controllers\PegawaiController.php(179): App\Controllers\PegawaiController->savefile(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 02:07:35 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(106): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(179): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 02:08:11 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(106): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(179): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 02:29:49 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(106): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(179): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 02:41:02 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(106): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(180): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 02:59:02 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(106): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(180): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 03:18:36 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(186): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(163): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 03:18:47 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(186): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(163): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 03:54:00 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(186): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(163): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 03:54:10 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\uploads/C:\\Users\\System SYS\\wp2\\SistemInformasiSekolah-1\\writable\\uploads/pegawai/', '1.jpg')
+ 5 APPPATH\Controllers\PegawaiController.php(186): CodeIgniter\HTTP\Files\UploadedFile->store('ROOTPATH\\writable\\uploads\\pegawai', '1.jpg')
+ 6 APPPATH\Controllers\PegawaiController.php(163): App\Controllers\PegawaiController->savefile(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-24 07:35:25 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'SIS', 3306, '', 0)
+#1 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(21): CodeIgniter\BaseModel->first()
+#7 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+#8 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#9 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(21): CodeIgniter\BaseModel->first()
+#6 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+#7 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#8 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#11 {main}
+CRITICAL - 2022-11-24 07:35:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pegawai`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\PegawaiController.php(21): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-24 07:35:29 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'SIS', 3306, '', 0)
+#1 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(21): CodeIgniter\BaseModel->first()
+#7 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+#8 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#9 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(21): CodeIgniter\BaseModel->first()
+#6 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+#7 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#8 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#11 {main}
+CRITICAL - 2022-11-24 07:35:29 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pegawai`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\PegawaiController.php(21): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-24 19:40:55 --> mysqli_sql_exception: Duplicate key name 'id' in C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `s...', 0)
+#1 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `s...')
+#2 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `s...')
+#3 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `s...')
+#4 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\app\Database\Migrations\2029-09-27-165209_Siswa.php(44): CodeIgniter\Database\Forge->createTable('siswa')
+#5 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\Siswa->up()
+#6 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(112): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#14 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#15 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#16 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#18 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\spark(98): CodeIgniter\CLI\Console->run()
+#19 {main}
+ERROR - 2022-11-24 19:41:48 --> mysqli_sql_exception: Duplicate key name 'id' in C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `s...', 0)
+#1 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `s...')
+#2 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `s...')
+#3 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `s...')
+#4 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\app\Database\Migrations\2029-09-27-165209_Siswa.php(44): CodeIgniter\Database\Forge->createTable('siswa')
+#5 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\Siswa->up()
+#6 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(112): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#14 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#15 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#16 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#18 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\spark(98): CodeIgniter\CLI\Console->run()
+#19 {main}
+ERROR - 2022-11-24 19:42:31 --> mysqli_sql_exception: Duplicate key name 'id' in C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `s...', 0)
+#1 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `s...')
+#2 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `s...')
+#3 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `s...')
+#4 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\app\Database\Migrations\2029-09-27-165209_Siswa.php(44): CodeIgniter\Database\Forge->createTable('siswa')
+#5 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\Siswa->up()
+#6 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(112): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#14 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#15 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#16 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#18 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\spark(98): CodeIgniter\CLI\Console->run()
+#19 {main}
+ERROR - 2022-11-24 19:43:06 --> mysqli_sql_exception: Duplicate key name 'id' in C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `s...', 0)
+#1 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `s...')
+#2 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `s...')
+#3 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `s...')
+#4 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\app\Database\Migrations\2029-09-27-165209_Siswa.php(44): CodeIgniter\Database\Forge->createTable('siswa')
+#5 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\Siswa->up()
+#6 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(112): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#14 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#15 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#16 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#18 C:\Users\System SYS\wp2\SistemInformasiSekolah-1\spark(98): CodeIgniter\CLI\Console->run()
+#19 {main}
+CRITICAL - 2022-11-24 21:21:53 --> LoginSiswa filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('LoginSiswa')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('LoginSiswa', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:05:50 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:05:53 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:06:09 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:06:44 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:06:45 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:06:48 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:09 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:10 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:10 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:11 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:11 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:45 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:46 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:46 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:46 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:47 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:47 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:47 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:48 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:07:48 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:08:42 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:08:42 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:08:55 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:10:47 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:10:51 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:13:53 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:15:08 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:15:18 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:16:52 --> isLoggedin filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedin')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('isLoggedin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:39:18 --> Invalid file: khusussiswa/jadwalks/table.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('khusussiswa/jadwalks/table.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('khusussiswa/jadwalks/table', [], true)
+ 3 APPPATH\Controllers\JadwalKSController.php(11): view('khusussiswa/jadwalks/table')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalKSController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalKSController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:39:20 --> Invalid file: khusussiswa/jadwalks/table.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('khusussiswa/jadwalks/table.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('khusussiswa/jadwalks/table', [], true)
+ 3 APPPATH\Controllers\JadwalKSController.php(11): view('khusussiswa/jadwalks/table')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalKSController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalKSController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:39:25 --> Invalid file: khusussiswa/jadwalks/table.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('khusussiswa/jadwalks/table.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('khusussiswa/jadwalks/table', [], true)
+ 3 APPPATH\Controllers\JadwalKSController.php(11): view('khusussiswa/jadwalks/table')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalKSController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalKSController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-24 23:41:02 --> Invalid file: khusussiswa/jadwalks.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('khusussiswa/jadwalks.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('khusussiswa/jadwalks', [], true)
+ 3 APPPATH\Controllers\JadwalKSController.php(11): view('khusussiswa/jadwalks')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalKSController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalKSController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

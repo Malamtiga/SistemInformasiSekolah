@@ -1,0 +1,54 @@
+CRITICAL - 2022-11-12 07:48:31 --> Undefined array key "nama_depan"
+in APPPATH\Views\rincianpenilaian\table.php on line 52.
+ 1 APPPATH\Views\rincianpenilaian\table.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_depan"', 'APPPATH\\Views\\rincianpenilaian\\table.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\rincianpenilaian\\table.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('rincianpenilaian/table', [], true)
+ 5 APPPATH\Controllers\RincianPenilaianController.php(16): view('rincianpenilaian/table')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\RincianPenilaianController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RincianPenilaianController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 07:48:33 --> Undefined array key "nama_depan"
+in APPPATH\Views\rincianpenilaian\table.php on line 52.
+ 1 APPPATH\Views\rincianpenilaian\table.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_depan"', 'APPPATH\\Views\\rincianpenilaian\\table.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\rincianpenilaian\\table.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('rincianpenilaian/table', [], true)
+ 5 APPPATH\Controllers\RincianPenilaianController.php(16): view('rincianpenilaian/table')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\RincianPenilaianController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RincianPenilaianController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-12 08:14:46 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kehadiran_guru`, CONSTRAINT `kehadiran_guru_jadwal_id_foreign` FOREIGN KEY (`jadwal_id`) REFERENCES `jadwal` (`id`) ON UPDATE CASCADE) in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ja...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ja...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ja...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ja...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\JadwalController.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalController->delete()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#12 {main}
+ERROR - 2022-11-12 08:14:48 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kehadiran_guru`, CONSTRAINT `kehadiran_guru_jadwal_id_foreign` FOREIGN KEY (`jadwal_id`) REFERENCES `jadwal` (`id`) ON UPDATE CASCADE) in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ja...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ja...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ja...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ja...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\JadwalController.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalController->delete()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#12 {main}

@@ -174,7 +174,7 @@
         $('table#table-jadwal').on('click', '.btn-light', function (){
             let id = $(this).data('id');
             let baseurl = "<?=base_url()?>";
-            $.get(`${baseurl}/pegawai/jadwal${id}`).done((e)=>{
+            $.get(`${baseurl}/pegawai/jadwal/${id}`).done((e)=>{
                 $('input[name=id]').val(e.id);
                 $('input[name=hari]').val(e.hari);
                 $('input[name=kelas_id]').val(e.kelas_id);

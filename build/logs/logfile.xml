@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="30" assertions="69" errors="0" warnings="0" failures="0" skipped="0" time="0.616451">
+    <testsuite name="App" tests="30" assertions="69" errors="0" warnings="0" failures="0" skipped="0" time="0.616451">
+      <testsuite name="BagianTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\BagianTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.065584">
+        <testcase name="testCreateShowUpdateDelete" class="BagianTest" classname="BagianTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\BagianTest.php" line="14" assertions="4" time="0.056104"/>
+        <testcase name="testRead" class="BagianTest" classname="BagianTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\BagianTest.php" line="40" assertions="1" time="0.009480"/>
+      </testsuite>
+      <testsuite name="JadwalTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\JadwalTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.041029">
+        <testcase name="testCreateShowUpdateDelete" class="JadwalTest" classname="JadwalTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\JadwalTest.php" line="14" assertions="4" time="0.029718"/>
+        <testcase name="testRead" class="JadwalTest" classname="JadwalTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\JadwalTest.php" line="45" assertions="1" time="0.011311"/>
+      </testsuite>
+      <testsuite name="KehadiranGuruTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KehadiranGuruTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.039578">
+        <testcase name="testCreateShowUpdateDelete" class="KehadiranGuruTest" classname="KehadiranGuruTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KehadiranGuruTest.php" line="14" assertions="4" time="0.030142"/>
+        <testcase name="testRead" class="KehadiranGuruTest" classname="KehadiranGuruTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KehadiranGuruTest.php" line="45" assertions="1" time="0.009435"/>
+      </testsuite>
+      <testsuite name="KehadiranSiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KehadiranSiswaTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.039990">
+        <testcase name="testCreateShowUpdateDelete" class="KehadiranSiswaTest" classname="KehadiranSiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KehadiranSiswaTest.php" line="14" assertions="4" time="0.030201"/>
+        <testcase name="testRead" class="KehadiranSiswaTest" classname="KehadiranSiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KehadiranSiswaTest.php" line="40" assertions="1" time="0.009789"/>
+      </testsuite>
+      <testsuite name="KelasSiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KelasSiswaTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.039023">
+        <testcase name="testCreateShowUpdateDelete" class="KelasSiswaTest" classname="KelasSiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KelasSiswaTest.php" line="14" assertions="4" time="0.029135"/>
+        <testcase name="testRead" class="KelasSiswaTest" classname="KelasSiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KelasSiswaTest.php" line="38" assertions="1" time="0.009888"/>
+      </testsuite>
+      <testsuite name="KelasTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KelasTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.038979">
+        <testcase name="testCreateShowUpdateDelete" class="KelasTest" classname="KelasTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KelasTest.php" line="14" assertions="4" time="0.029479"/>
+        <testcase name="testRead" class="KelasTest" classname="KelasTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\KelasTest.php" line="41" assertions="1" time="0.009500"/>
+      </testsuite>
+      <testsuite name="MapelTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\MapelTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.038971">
+        <testcase name="testCreateShowUpdateDelete" class="MapelTest" classname="MapelTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\MapelTest.php" line="16" assertions="4" time="0.029142"/>
+        <testcase name="testRead" class="MapelTest" classname="MapelTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\MapelTest.php" line="46" assertions="1" time="0.009830"/>
+      </testsuite>
+      <testsuite name="PegawaiTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PegawaiTest.php" tests="4" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.081001">
+        <testcase name="testLogin" class="PegawaiTest" classname="PegawaiTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PegawaiTest.php" line="13" assertions="1" time="0.035349"/>
+        <testcase name="testCreateShowUpdateDelete" class="PegawaiTest" classname="PegawaiTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PegawaiTest.php" line="20" assertions="4" time="0.028739"/>
+        <testcase name="testRead" class="PegawaiTest" classname="PegawaiTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PegawaiTest.php" line="70" assertions="1" time="0.008096"/>
+        <testcase name="testLogout" class="PegawaiTest" classname="PegawaiTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PegawaiTest.php" line="75" assertions="1" time="0.008816"/>
+      </testsuite>
+      <testsuite name="PendidikanGuruTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PendidikanGuruTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.040162">
+        <testcase name="testCreateShowUpdateDelete" class="PendidikanGuruTest" classname="PendidikanGuruTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PendidikanGuruTest.php" line="14" assertions="4" time="0.029283"/>
+        <testcase name="testRead" class="PendidikanGuruTest" classname="PendidikanGuruTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PendidikanGuruTest.php" line="46" assertions="1" time="0.010880"/>
+      </testsuite>
+      <testsuite name="PenilaianTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PenilaianTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.044862">
+        <testcase name="testCreateShowUpdateDelete" class="PenilaianTest" classname="PenilaianTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PenilaianTest.php" line="14" assertions="4" time="0.035499"/>
+        <testcase name="testRead" class="PenilaianTest" classname="PenilaianTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\PenilaianTest.php" line="41" assertions="1" time="0.009363"/>
+      </testsuite>
+      <testsuite name="RincianPenilaianTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\RincianPenilaianTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.038900">
+        <testcase name="testCreateShowUpdateDelete" class="RincianPenilaianTest" classname="RincianPenilaianTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\RincianPenilaianTest.php" line="14" assertions="4" time="0.028801"/>
+        <testcase name="testRead" class="RincianPenilaianTest" classname="RincianPenilaianTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\RincianPenilaianTest.php" line="41" assertions="1" time="0.010098"/>
+      </testsuite>
+      <testsuite name="SiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\SiswaTest.php" tests="4" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.065813">
+        <testcase name="testLogin" class="SiswaTest" classname="SiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\SiswaTest.php" line="13" assertions="1" time="0.011492"/>
+        <testcase name="testCreateShowUpdateDelete" class="SiswaTest" classname="SiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\SiswaTest.php" line="20" assertions="4" time="0.033629"/>
+        <testcase name="testRead" class="SiswaTest" classname="SiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\SiswaTest.php" line="84" assertions="1" time="0.008837"/>
+        <testcase name="testLogout" class="SiswaTest" classname="SiswaTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\SiswaTest.php" line="89" assertions="1" time="0.011855"/>
+      </testsuite>
+      <testsuite name="TahunAjaranTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\TahunAjaranTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.042559">
+        <testcase name="testCreateShowUpdateDelete" class="TahunAjaranTest" classname="TahunAjaranTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\TahunAjaranTest.php" line="14" assertions="4" time="0.031706"/>
+        <testcase name="testRead" class="TahunAjaranTest" classname="TahunAjaranTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah-1\tests\unit\TahunAjaranTest.php" line="41" assertions="1" time="0.010853"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -26,7 +26,7 @@
             <!-- Card Body -->
             <div class="card-body">
                 <div class="chart-area">
-                <img src="<?=base_url('assets/img/sekolah1.jpg')?>" width="780" height="320" alt=""></img>
+                <img src="<?=base_url('assets/img/sekolah1.jpg')?>" width="693" height="320" alt=""></img>
                 </div>
             </div>
         </div>

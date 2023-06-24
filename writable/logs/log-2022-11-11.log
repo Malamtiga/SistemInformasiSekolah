@@ -1,0 +1,71 @@
+CRITICAL - 2022-11-11 09:27:39 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getVar
+in APPPATH\Controllers\PegawaiController.php on line 122.
+ 1 APPPATH\Controllers\PegawaiController.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getVar', 'APPPATH\\Controllers\\PegawaiController.php', 122)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-11 10:18:27 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kehadiran_guru`, CONSTRAINT `kehadiran_guru_jadwal_id_foreign` FOREIGN KEY (`jadwal_id`) REFERENCES `jadwal` (`id`) ON UPDATE CASCADE) in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ja...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ja...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ja...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ja...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\JadwalController.php(63): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalController->delete()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#12 {main}
+ERROR - 2022-11-11 11:41:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'SIS', 3306, '', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `m...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\MapelController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\MapelController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MapelController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `m...', Array, false)
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\MapelController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\MapelController->all()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MapelController))
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#12 {main}
+CRITICAL - 2022-11-11 11:41:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `mapel`, `kelompok`, `keterangan`, `tingkat`, `kkm`
+FROM `mapel`
+ LIMIT 10', [], false)
+ 3 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', [])
+ 5 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 6 APPPATH\Controllers\MapelController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\MapelController->all()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MapelController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

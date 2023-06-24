@@ -1,0 +1,578 @@
+CRITICAL - 2022-11-07 11:06:39 --> Invalid file: login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\PegawaiController.php(39): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->viewLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:06:42 --> Class "Agoenxz21\Datatables\Datatable" not found
+in APPPATH\Controllers\BagianController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\BagianController->all()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BagianController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:06:49 --> Class "Agoenxz21\Datatables\Datatable" not found
+in APPPATH\Controllers\BagianController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\BagianController->all()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BagianController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:07:50 --> Class "Agoenxz21\Datatables\Datatable" not found
+in APPPATH\Controllers\BagianController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\BagianController->all()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BagianController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:09:15 --> Class "Agoenxz21\Datatables\Datatable" not found
+in APPPATH\Controllers\BagianController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\BagianController->all()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BagianController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:12:20 --> Invalid file: login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\PegawaiController.php(39): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->viewLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:12:23 --> Invalid file: login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\PegawaiController.php(39): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->viewLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:21 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:23 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:23 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:24 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:24 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:26 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:27 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:27 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:27 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:28 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:28 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:28 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:29 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:35 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:35 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:35 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:36 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:36 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:36 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:36 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:37 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:37 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:37 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:14:37 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:16:14 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:16:14 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:16:15 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:16:15 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:16:16 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:16:16 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:16:16 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:17:04 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:17:04 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:17:04 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:17:05 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:17:05 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:17:05 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:49 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:49 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:50 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:50 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:50 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:51 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:51 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:51 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:52 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:52 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:53 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:53 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:53 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:54 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:54 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:54 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:55 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:55 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:56 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:56 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:56 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:57 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:18:57 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:20:19 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:20:20 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:20:20 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:20:20 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-07 11:20:21 --> Undefined property: App\Controllers\PegawaiController::$session
+in APPPATH\Controllers\PegawaiController.php on line 33.
+ 1 APPPATH\Controllers\PegawaiController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PegawaiController::$session', 'APPPATH\\Controllers\\PegawaiController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

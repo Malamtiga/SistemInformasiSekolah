@@ -25,6 +25,7 @@ class PegawaiSeeder extends Seeder
             'tgl_lahir'         => '1975-02-03',
             'tempat_lahir'      => 'Pontianak', 
             'sandi'             => password_hash('123456', PASSWORD_BCRYPT), 
+            'token_reset'      => '1234566', 
         ]);
             echo "hasil id = $id";
 

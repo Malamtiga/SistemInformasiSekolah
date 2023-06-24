@@ -1,0 +1,1380 @@
+ERROR - 2022-11-14 00:12:42 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kehadir...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kehadir...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kehadir...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kehadir...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:12:42 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:12:44 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kehadir...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kehadir...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kehadir...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kehadir...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:12:44 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:12:45 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kehadir...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kehadir...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kehadir...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kehadir...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:12:45 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:13:12 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(96): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:13:12 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(96): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:14:52 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:14:52 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:14:53 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:14:53 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:15:40 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:15:40 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:15:43 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:15:43 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:18:22 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:18:22 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:18:24 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:18:24 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:19:23 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:19:23 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:19:51 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`jadwal`, CONSTRAINT `jadwal_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE) in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pe...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(159): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#12 {main}
+ERROR - 2022-11-14 00:23:31 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kehadir...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kehadir...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kehadir...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kehadir...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:23:31 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:23:38 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\SiswaController.php(23): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\SiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:23:38 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\SiswaController.php(23): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:23:39 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\SiswaController.php(23): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\SiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:23:39 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\SiswaController.php(23): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:24:15 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:24:15 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:24:16 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:24:16 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:24:17 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:24:17 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:24:18 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:24:18 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:24:47 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:24:47 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:24:50 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:24:50 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:24:52 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:24:52 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:26:49 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:26:49 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:26:51 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:26:51 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:26:52 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:26:52 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:26:59 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:26:59 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:30:00 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:30:00 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:30:02 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:30:02 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:30:44 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:30:44 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:31:42 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:31:42 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:31:44 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:31:44 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:31:45 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:31:45 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:31:53 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:31:53 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:33:40 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:33:40 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(97): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:35:19 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pegawai...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pegawai...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pegawai...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pegawai...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PegawaiController.php(98): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:35:19 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PegawaiController.php(98): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 00:36:37 --> Invalid file: tahunajaran/table.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tahunajaran/table.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tahunajaran/table', [], true)
+ 3 APPPATH\Controllers\TahunAjaranController.php(16): view('tahunajaran/table')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\TahunAjaranController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TahunAjaranController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 00:43:51 --> Invalid file: kehadiranguru/table.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kehadiranguru/table.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kehadiranguru/table', [], true)
+ 3 APPPATH\Controllers\KehadiranGuruController.php(18): view('kehadiranguru/table')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:46:43 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kehadir...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kehadir...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kehadir...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kehadir...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:46:43 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:46:44 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kehadir...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kehadir...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kehadir...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kehadir...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:46:44 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KehadiranGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:48:36 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pendidi...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pendidi...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pendidi...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pendidi...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PendidikanGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PendidikanGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PendidikanGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:48:36 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PendidikanGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PendidikanGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PendidikanGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 00:48:37 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pendidi...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pendidi...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pendidi...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pendidi...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PendidikanGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PendidikanGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PendidikanGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 00:48:37 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PendidikanGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PendidikanGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PendidikanGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 01:04:32 --> Invalid file: backend/kehadiransiswa/table.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend/kehadiransiswa/table.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('backend/kehadiransiswa/table', [], true)
+ 3 APPPATH\Controllers\KehadiranSiswaController.php(17): view('backend/kehadiransiswa/table')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranSiswaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranSiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 01:29:43 --> Invalid file: kelassiswa/table.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kelassiswa/table.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kelassiswa/table', [], true)
+ 3 APPPATH\Controllers\KelasSiswaController.php(17): view('kelassiswa/table')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:32:35 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rincian...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rincian...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rincian...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rincian...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\RincianPenilaianController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\RincianPenilaianController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RincianPenilaianController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:32:35 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\RincianPenilaianController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\RincianPenilaianController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RincianPenilaianController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:32:41 --> mysqli_sql_exception: Column 'tingkat' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `jadwal`...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal`...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal`...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal`...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\JadwalController.php(21): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:32:41 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\JadwalController.php(21): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:32:42 --> mysqli_sql_exception: Column 'tingkat' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `jadwal`...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal`...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal`...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal`...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\JadwalController.php(21): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:32:42 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\JadwalController.php(21): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:32:47 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\SiswaController.php(23): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\SiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:32:47 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\SiswaController.php(23): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:32:48 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\SiswaController.php(23): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\SiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:32:48 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\SiswaController.php(23): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:32:53 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:32:53 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:32:54 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:32:54 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:33:01 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pendidi...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pendidi...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pendidi...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pendidi...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PendidikanGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PendidikanGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PendidikanGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:33:01 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PendidikanGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PendidikanGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PendidikanGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:33:01 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pendidi...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pendidi...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pendidi...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pendidi...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PendidikanGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PendidikanGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PendidikanGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:33:01 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PendidikanGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PendidikanGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PendidikanGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:33:05 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pendidi...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pendidi...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pendidi...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pendidi...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\PendidikanGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PendidikanGuruController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PendidikanGuruController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:33:05 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\PendidikanGuruController.php(26): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PendidikanGuruController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PendidikanGuruController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:37:35 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kehadir...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kehadir...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kehadir...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kehadir...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KehadiranSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KehadiranSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:37:35 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KehadiranSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:37:37 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kehadir...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kehadir...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kehadir...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kehadir...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KehadiranSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KehadiranSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:37:37 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KehadiranSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:37:39 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kehadir...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kehadir...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kehadir...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kehadir...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KehadiranSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KehadiranSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:37:39 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KehadiranSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KehadiranSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KehadiranSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:39:23 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:39:23 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-14 01:39:24 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `kelas_s...', 0)
+#1 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas_s...')
+#2 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas_s...')
+#3 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `kelas_s...', Array, false)
+#4 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(189): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+#7 C:\Users\vbona\wp2\SistemInformasiSekolah-1\app\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+#8 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+#9 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+#10 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vbona\wp2\SistemInformasiSekolah-1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vbona\wp2\SistemInformasiSekolah-1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\vbona\\...')
+#13 {main}
+CRITICAL - 2022-11-14 01:39:24 --> Call to a member function getResultArray() on bool
+in VENDORPATH\agoenxz21\datatables\src\Datatable.php on line 189.
+ 1 VENDORPATH\agoenxz21\datatables\src\Datatable.php(82): Agoenxz21\Datatables\Datatable->getResult()
+ 2 APPPATH\Controllers\KelasSiswaController.php(24): Agoenxz21\Datatables\Datatable->draw()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\KelasSiswaController->all()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelasSiswaController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

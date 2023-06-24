@@ -144,7 +144,7 @@ crossorigin="anonymous"></script>
         $('table#table-kelassiswa').on('click', '.btn-light', function (){
             let id = $(this).data('id');
             let baseurl = "<?=base_url()?>";
-            $.get(`${baseurl}/pegawaii/kelassiswa/${id}`).done((e)=>{
+            $.get(`${baseurl}/pegawai/kelassiswa/${id}`).done((e)=>{
                 $('input[name=id]').val(e.id);
                 $('input[name=kelas_id]').val(e.kelas_id);
                 $('input[name=siswa_id]').val(e.siswa_id);
